@@ -57,8 +57,26 @@ describe('Collections', function() {
     })
 
     it('should invoke the function on each element with the \
-      correct context', function () {
+      correct context', function() {
       _.map([1, 2, 3], tripleWithContext, 1).should.eql([4, 7, 10])
+    })
+  })
+})
+
+describe('Functions', function() {
+  describe('#partial()', function() {
+    function printThreeNames(a, b, c) {
+      return 'First: ' + a + '\nSecond: ' + b + '\nThird: ' + c
+    }
+
+    it('should create a partially applied function', function() {
+      _.partial(printThreeNames, 'Derek', undefined, 'Nemo')('Yo')
+        .should.be.equal(printThreeNames('Derek', 'Yo', 'Nemo'))
+    })
+
+    it('should work when only some of the arguments are given', function() {
+      _.partial(printThreeNames, 'Derek')('Yo', 'Nemo')
+        .should.be.equal(printThreeNames('Derek', 'Yo', 'Nemo'))
     })
   })
 })
