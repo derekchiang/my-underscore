@@ -10,7 +10,7 @@ I've learned a lot.  Maybe you should do something like this too!
 
 ## Should I use this library?
 
-Most likely not; unless you REALLY REALLY trust me :P
+Most likely not; unless you REALLY REALLY trust me :P  In any case, I've made sure to write tests, so it might actually be usable.
 
 ## Differences to underscore.js
 
