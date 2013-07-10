@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+      "should": "*"
+  },
+  "main": "./my_underscore.js"
+}
