@@ -24,3 +24,7 @@ My partial is inspired by that of Prototype.js.  It's smarter:
 	})
 
 Basically, my partial inspects the arguments and replace `undefined` with the arguments that you invoke with.  This allows you to create any kind of partial functions regardless of the original function's argument positions.
+
+## License
+
+[WTFPL](http://www.wtfpl.net/about/).
